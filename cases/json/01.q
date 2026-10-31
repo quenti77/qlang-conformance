@@ -1,0 +1,6 @@
+let j = Json.parse("\{\"name\": \"ana\", \"tags\": [\"a\", \"b\"], \"n\": 3\}").unwrap()
+print((j.get("name") ?? Json.null()).as_string())
+print((j.get("n") ?? Json.null()).as_number())
+print(j.get("missing") == none)
+print(Json.parse("[1, 2").is_err())
+print(Json.of({"k": 1}).to_text())

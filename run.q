@@ -69,7 +69,9 @@ end
 let passed = 0
 let failed = 0
 for path in paths do
-  if filter == "" or path.contains(filter) then
+  -- files whose name starts with `_` are helpers a case imports, not cases
+  let is_helper = path.contains("/_")
+  if not is_helper and (filter == "" or path.contains(filter)) then
     let result = check(qlang, path)
     if result == none then
       passed += 1

@@ -1,7 +1,0 @@
-[package]
-name = "conformance"
-version = "0.75.0"
-main = "run.q"
-
-[fmt]
-exclude = ["cases"]
