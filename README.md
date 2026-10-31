@@ -30,7 +30,9 @@ its meaning and does not promise the text of messages.
 ## What is covered, and what is not
 
 Covered: the language and its prelude (values, strings, arrays, maps, sets, tuples, optionals, `Result` and `?`,
-structs, traits, enums and `match`, generics, closures, errors with their codes). Programs run with the default
+structs, inheritance, traits, enums and `match`, generics, closures, JSON, modules, errors with their codes). The
+list of what qlang's 1.0 will freeze, line by line with the areas of `cases/` that cover it, is in
+[docs/stability.md](https://github.com/quenti77/qlang/blob/main/docs/stability.md#ce-que-la-10-promettra-proposition). Programs run with the default
 limits and `--seed 0`.
 
 Not covered here: the command line (`serve`, `fmt`, `test`, `doc`, `lsp`…), the editor extension, `qlang-std` (its
