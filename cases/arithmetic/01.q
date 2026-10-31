@@ -1,0 +1,5 @@
+print(7 / 2)
+print(7 div 2)
+print(7 mod 2)
+print(-7 div 2)
+print(-7 mod 2)

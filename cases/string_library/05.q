@@ -1,0 +1,8 @@
+print("123".is_digit())
+print("12a".is_digit())
+print("".is_digit())
+print("héé".is_alpha())
+print("a1".is_alpha())
+print("  ".is_blank())
+print("".is_blank())
+print(" x".is_blank())

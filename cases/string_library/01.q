@@ -1,0 +1,5 @@
+print("  hi  ".trim_start() + "|")
+print("  hi  ".trim_end() + "|")
+print("héllo".reverse())
+print("hello world".capitalize())
+print("".capitalize() == "")

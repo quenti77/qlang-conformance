@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "17 5 * * 1"
+permissions:
+  contents: read
+jobs:
+  conformance:
+    name: The latest qlang release against the cases
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install qlang
+        run: curl -fsSL https://raw.githubusercontent.com/quenti77/qlang/main/install.sh | sh
+      - run: ~/.local/bin/qlang --version
+      - run: QLANG=$HOME/.local/bin/qlang ~/.local/bin/qlang run --allow-process run.q

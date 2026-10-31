@@ -1,0 +1,5 @@
+print(3 as float)
+print(3.99 as int)
+print(-3.99 as int)
+print(42 as string + "!")
+print(true as string)
