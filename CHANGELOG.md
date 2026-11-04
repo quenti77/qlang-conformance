@@ -8,6 +8,8 @@ New areas for the small library modules that qlang 1.1 promotes from provisional
 
 New areas for what qlang 1.1 promotes from provisional to stable: `operator_overloading` (every overloadable operator, compound assignment, `Index`, `IndexSet`, `Push`, `As<T>`), `type_aliases` and `compile_type_aliases` (`T122`, `P002`, `T230`), `annotations` and `compile_annotations` (`T001`, `T290`, `T292`, `T293`, `T002`), `any_values` and `compile_any` (`T303`, `T005`). 19 cases added, none changed or removed.
 
+New areas for `T.zero()` and `Self`: `generic_statics` (a static method called through a type parameter, in a function and in an `impl`, `Self` in traits and impls, `Zero` and `One`, the sum of an empty array) and `compile_generic_statics` (`T161`, `T171`, `T001`). 11 cases added.
+
 ## 1.0.0
 
 The suite that qlang 1.0 promises (see `docs/stability.md` in qlang): every line of that page names the cases that cover it. 224 + 1 cases, none added, changed or removed since 0.78.0. qlang 1.0 runs all of them.
