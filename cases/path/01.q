@@ -1,0 +1,7 @@
+print(Path.join("uploads", "photo.png"))
+print(Path.join_all(["a", "", "b/", "../c"]))
+print(Path.join("a", "/abs"))
+print(Path.normalize("a//b/./c/../d/"))
+print(Path.normalize(""))
+print(Path.normalize("../a"))
+print(Path.normalize("/.."))
