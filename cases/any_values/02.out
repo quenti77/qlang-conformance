@@ -1,0 +1,6 @@
+Dog { label: "rex" }
+Dog { label: "rex" }
+none
+User { id: 7 }
+none
+array<int>
