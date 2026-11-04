@@ -11,6 +11,7 @@ New areas for what qlang 1.1 promotes from provisional to stable: `operator_over
 New areas for `T.zero()` and `Self`: `generic_statics` (a static method called through a type parameter, in a function and in an `impl`, `Self` in traits and impls, `Zero` and `One`, the sum of an empty array) and `compile_generic_statics` (`T161`, `T171`, `T001`). 11 cases added.
 
 New areas for `Iterable` (qlang 1.1, provisional): `iterables` (`for` and `...` over a type of the program, a keyed iterable, an element that is `none`, the lazy `map`, `filter`, `take`, `skip`, `collect`, `count`, `first`, a bounded generic function) and `compile_iterables` (`T190`). 9 cases added.
+New areas for `Duration` and the richer `datetime` (qlang 1.1, provisional): `durations` (adding, totals, `normalize`, differences, comparisons), `datetime_periods` (`start_of_*`, `end_of_*`, `with`, weekdays), `datetime_format` (format tokens, `format_in`, `humanize`, text forms, Unix time) and `runtime_datetime` (`R066`). 9 cases added.
 
 ## 1.0.0
 

@@ -1,0 +1,5 @@
+let t = datetime.of(2026, 1, 31, 10, 0, 0)
+print(t + Duration.of(months: 1))
+print(t + Duration.of(months: 1, days: 2, hours: 3))
+print(t - Duration.of(days: 31))
+print(t.plus(Duration.of(ms: 1500)))
