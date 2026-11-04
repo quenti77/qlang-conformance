@@ -2,7 +2,7 @@
 
 ## 1.1.0
 
-New areas for what qlang 1.1 promotes from provisional to stable: `operator_overloading` (every overloadable operator, compound assignment, `Index`, `IndexSet`, `Push`, `As<T>`), `type_aliases` and `compile_type_aliases` (`T122`, `P002`, `T230`), `annotations` and `compile_annotations` (`T001`, `T290`, `T292`, `T293`, `T002`), `any_values` and `compile_any` (`T303`, `T005`). 15 cases added, none changed or removed.
+New areas for what qlang 1.1 promotes from provisional to stable: `operator_overloading` (every overloadable operator, compound assignment, `Index`, `IndexSet`, `Push`, `As<T>`), `type_aliases` and `compile_type_aliases` (`T122`, `P002`, `T230`), `annotations` and `compile_annotations` (`T001`, `T290`, `T292`, `T293`, `T002`), `any_values` and `compile_any` (`T303`, `T005`). 19 cases added, none changed or removed.
 
 ## 1.0.0
 
