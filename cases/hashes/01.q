@@ -1,0 +1,5 @@
+print(Hash.sha256("abc"))
+print(Hash.sha1("abc"))
+print(Hash.md5("abc"))
+print(Hash.sha256(""))
+print(Hash.hmac_sha256("key", "The quick brown fox jumps over the lazy dog"))

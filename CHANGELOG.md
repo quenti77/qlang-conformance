@@ -4,6 +4,8 @@
 
 New areas for variadic parameters and the spread operator `...` (qlang 1.1 promotes them from provisional to stable): `variadics` (collecting the arguments, fixed and default parameters before the variadic one, spread in a call, an array and a map, generics, methods, anonymous functions and function types), `compile_variadics` (`T240`, `T264`, `T266`, `T267`, `P044`, `P046`) and `runtime_variadics` (`R018`). 13 cases added, none changed or removed.
 
+New areas for the small library modules that qlang 1.1 promotes from provisional to stable: `encodings` (`Base64`, `Hex`, `Url`), `hashes` (`Hash`), `regex`, `path` (`Path`), `format` (`Format`) and `identifiers` (`uuid`, `ulid`: what is not random). 12 cases added, none changed or removed.
+
 ## 1.0.0
 
 The suite that qlang 1.0 promises (see `docs/stability.md` in qlang): every line of that page names the cases that cover it. 224 + 1 cases, none added, changed or removed since 0.78.0. qlang 1.0 runs all of them.

@@ -1,0 +1,8 @@
+print(regex.matches("hello world", "wor.d"))
+print(regex.matches("hello", "^world"))
+print(regex.find("hello world", "w\\w+"))
+print(regex.find("hello", "z"))
+print(regex.find_all("a1 b2 c3", "\\d"))
+print(regex.replace("a1 b2", "\\d", "#"))
+print(regex.replace_all("a1 b2", "\\d", "#"))
+print(regex.split("a,b,,c", ","))

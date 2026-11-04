@@ -1,0 +1,6 @@
+print(Format.sprintf("%-8s|%05.1f", [Any.of("ab"), Any.of(3.14159)]))
+print(Format.sprintf("%d items", [Any.of(3)]))
+print(Format.sprintf("%x %X %o %b", [Any.of(255), Any.of(255), Any.of(8), Any.of(5)]))
+print(Format.sprintf("%+d %5d|%-5d|", [Any.of(7), Any.of(42), Any.of(42)]))
+print(Format.sprintf("100%%", []))
+print(Format.sprintf("%.2s", [Any.of("hello")]))
