@@ -1,0 +1,6 @@
+print((datetime.parse_with("11/10/2026 14:30", "DD/MM/YYYY HH:mm") ?? datetime.at(0)).to_iso())
+print((datetime.parse_with("2026-10-11T14:30+02:00", "YYYY-MM-DD[T]HH:mmZZ") ?? datetime.at(0)).to_iso())
+print((datetime.parse_with("2026-10-11T14:30Z", "YYYY-MM-DD[T]HH:mmZZ") ?? datetime.at(0)).to_iso())
+print(datetime.parse_with("31/02/2026", "DD/MM/YYYY"))
+print(datetime.parse_with("11-10-2026", "DD/MM/YYYY"))
+print(datetime.from_unix(86400 * 365).format("YYYY-MM-DD"))

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+
+New areas for the arbitrary-precision numbers and the dates of qlang 1.2: `big_numbers` (`BigInt`: factorial, powers, products past the `int` range; `BigDecimal`: exact sums, scales, comparisons) and `datetime_parse_with` (`datetime.parse_with` with an offset, `datetime.from_unix`, `Duration.parse`, `d.each`). 4 cases added, none changed or removed.
+
 ## 1.1.0
 
 New areas for variadic parameters and the spread operator `...` (qlang 1.1 promotes them from provisional to stable): `variadics` (collecting the arguments, fixed and default parameters before the variadic one, spread in a call, an array and a map, generics, methods, anonymous functions and function types), `compile_variadics` (`T240`, `T264`, `T266`, `T267`, `P044`, `P046`) and `runtime_variadics` (`R018`). 13 cases added, none changed or removed.
