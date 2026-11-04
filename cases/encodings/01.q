@@ -1,0 +1,7 @@
+print(Base64.encode("Man"))
+print(Base64.encode("Ma"))
+print(Base64.encode("hello world"))
+print(Base64.encode_url("a?b>c"))
+print(Base64.decode("TWFu"))
+print(Base64.decode(Base64.encode("héllo")))
+print(Base64.decode("a?b>c"))

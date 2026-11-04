@@ -1,0 +1,8 @@
+print(Format.number(1234567.891, 2))
+print(Format.number_with(1234567.891, 2, ",", " "))
+print(Format.int(1234567))
+print(Format.int_with(1234567, " "))
+print(Format.int(-1234))
+print(Format.bytes(512))
+print(Format.bytes(1536))
+print(Format.bytes(1048576))

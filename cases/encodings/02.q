@@ -1,0 +1,5 @@
+print(Hex.encode("abc"))
+print(Hex.encode(""))
+print(Hex.decode("616263"))
+print(Hex.decode("zz"))
+print(Hex.decode("6"))
