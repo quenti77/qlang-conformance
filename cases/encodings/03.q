@@ -1,0 +1,5 @@
+print(Url.encode("a b&c"))
+print(Url.encode("a/b?c=d"))
+print(Url.decode("a%20b%26c"))
+print(Url.decode("a+b"))
+print(Url.decode("100%"))
