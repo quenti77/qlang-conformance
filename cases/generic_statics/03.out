@@ -1,0 +1,3 @@
+Money { cents: 0 }
+Pair { a: 0, b: 0 }
+Pair { a: Pair { a: 0, b: 0 }, b: Pair { a: 0, b: 0 } }

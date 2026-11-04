@@ -1,0 +1,4 @@
+Money { cents: 0 }
+Money { cents: 5 }
+Money { cents: 0 }
+0
