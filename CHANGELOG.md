@@ -10,6 +10,8 @@ New areas for what qlang 1.1 promotes from provisional to stable: `operator_over
 
 New areas for `T.zero()` and `Self`: `generic_statics` (a static method called through a type parameter, in a function and in an `impl`, `Self` in traits and impls, `Zero` and `One`, the sum of an empty array) and `compile_generic_statics` (`T161`, `T171`, `T001`). 11 cases added.
 
+New areas for `Iterable` (qlang 1.1, provisional): `iterables` (`for` and `...` over a type of the program, a keyed iterable, an element that is `none`, the lazy `map`, `filter`, `take`, `skip`, `collect`, `count`, `first`, a bounded generic function) and `compile_iterables` (`T190`). 9 cases added.
+
 ## 1.0.0
 
 The suite that qlang 1.0 promises (see `docs/stability.md` in qlang): every line of that page names the cases that cover it. 224 + 1 cases, none added, changed or removed since 0.78.0. qlang 1.0 runs all of them.
