@@ -2,7 +2,7 @@
 
 ## 1.2.0
 
-New areas for the arbitrary-precision numbers and the dates of qlang 1.2: `big_numbers` (`BigInt`: factorial, powers, products past the `int` range; `BigDecimal`: exact sums, scales, comparisons) and `datetime_parse_with` (`datetime.parse_with` with an offset, `datetime.from_unix`, `Duration.parse`, `d.each`). `zones` (`Zone`: offsets, abbreviations, wall clock, local time, a gap), `archives` (`Gzip`, `Zip`, `Tar` round trips and their protections) and `panic_guard` (`Panic.guard`). 7 cases added, none changed or removed.
+New areas for the arbitrary-precision numbers and the dates of qlang 1.2: `big_numbers` (`BigInt`: factorial, powers, products past the `int` range; `BigDecimal`: exact sums, scales, comparisons) and `datetime_parse_with` (`datetime.parse_with` with an offset, `datetime.from_unix`, `Duration.parse`, `d.each`). `zones` (`Zone`: offsets, abbreviations, wall clock, local time, a gap), `archives` (`Gzip`, `Zip`, `Tar` round trips and their protections) and `panic_guard` (`Panic.guard`). 10 cases added (also `dates_and_times`: `Date`, `Time` and five more languages; `zoned`), none changed or removed.
 
 ## 1.1.0
 
