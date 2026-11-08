@@ -1,0 +1,5 @@
+Result.Err(OpenFileError { message: "open" })
+Result.Err(ReadAccessFileError { message: "read" })
+Result.Err(OpenFileError { message: "direct" })
+Result.Ok(Chat { name: "tom" })
+open
