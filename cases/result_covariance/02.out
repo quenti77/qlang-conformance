@@ -1,0 +1,4 @@
+Result.Ok(Chat { name: "rex" })
+Result.Err(Error { message: "bad" })
+Result.Ok(Chat { name: "felix" })
+Result.Ok(Chat { name: "tom" })
