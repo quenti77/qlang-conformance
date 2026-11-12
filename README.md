@@ -22,6 +22,7 @@ Exit code 1 when a case fails.
 | `name.out` | the exact standard output of a run that must succeed |
 | `name.error` | a code (`T002`, `P001`, `R011`…): the run must fail with `error[CODE]` on the error output, exit code 1 for `P`/`T` (compile) codes and 2 for `R` (run time) codes |
 | `name.exit` | the exit code of a run that must succeed (0 when absent) |
+| `name.in` | the standard input of the run (the lines `read()` returns); no input when absent |
 
 Error **codes** are checked, never their wording: the stability policy of qlang
 ([docs/stability.md](https://github.com/quenti77/qlang/blob/main/docs/stability.md)) promises that a published code keeps
