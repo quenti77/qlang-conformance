@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0
+
+New area `read_input` for `read(message)` and `read<T>(message)` (qlang 1.4): the prompt without a new line, `int`, `float`, `bool` and `string` answers, a line that is not a `T` and the end of the input as errors of the `Result` (`ReadError`), `?`, and `T242` for a type that is not readable. The runner gives a case its standard input from `name.in`. 5 cases added, none changed or removed.
+
 ## 1.3.0
 
 New areas for what qlang 1.3 adds or promotes to stable: `result_covariance` (a `Result` whose value or error is a child type is usable where the parent is expected: assignment, argument, return, `?` and `Ok(child)`/`Err(child)` against a wider expected type) and `compile_result_covariance` (`T282` for an error type with no link to the function's, `T002` for `array` and for a narrower `Result`), and two cases in `durations` (`calendar_parts_and_small_totals`, `small_differences`) for the methods of `Duration` and `datetime` that no case used. 8 cases added, none changed or removed.

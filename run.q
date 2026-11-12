@@ -10,6 +10,8 @@ A case `cases/area/name.q` comes with:
   name.error  a code such as `T002` or `R011`: the run must fail with `error[CODE]` on the error
               output (exit code 1 for `P` and `T` codes, 2 for `R` codes)
   name.exit   the exit code of a run that must succeed (0 when absent)
+  name.in     the standard input of the run, one line per line (the lines `read()` returns); no input
+              when absent
 --"
 
 fun read_or(path: string, fallback: string) -> string
@@ -26,7 +28,12 @@ end
 
 fun check(qlang: string, path: string) -> string?
   let base = path.substring(0, path.len() - 2)
-  let ran = Process.run(qlang, ["run", "--seed", "0", path])
+  let input = read_or(base + ".in", "")
+  let ran = if input == "" then
+    Process.run(qlang, ["run", "--seed", "0", path])
+  else
+    Process.run_with_input(qlang, ["run", "--seed", "0", path], input)
+  end
   match ran
     case Err(e) then
       "cannot start {qlang}: {e.message}"

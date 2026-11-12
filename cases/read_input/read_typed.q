@@ -1,0 +1,6 @@
+-- read<T>(message) reads a line as a T: ParsableFromString (string, int, float, bool)
+let port = read<int>("Port? ").unwrap()
+let ratio = read<float>("Ratio? ").unwrap()
+let flag = read<bool>("Flag? ").unwrap()
+let text = read<string>("Text? ").unwrap()
+print("{port + 1} {ratio * 2.0} {flag} {text}")
