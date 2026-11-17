@@ -1,5 +1,5 @@
 let n = 17
-n div= 5
+n //= 5
 print(n)
 n mod= 2
 print(n)

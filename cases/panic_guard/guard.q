@@ -9,7 +9,7 @@ if failure != none then
   print(failure.places.len() >= 2)
 end
 print(Panic.guard(fun() boom(3) end) == none)
-let zero = Panic.guard(fun() 1 div 0 end)
+let zero = Panic.guard(fun() 1 // 0 end)
 if zero != none then
   print(zero.code)
 end

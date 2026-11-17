@@ -1,7 +1,7 @@
 -- one
 print(1) -- two
---( block
- comment --)
+--* block
+ comment --*
 print(2)
 --" doc --"
 print(3)

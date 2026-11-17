@@ -1,1 +1,1 @@
-print(1 div 0)
+print(1 // 0)
