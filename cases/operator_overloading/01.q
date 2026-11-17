@@ -28,7 +28,7 @@ end
 
 impl IntDiv<int> for Money
     public fun int_div(self, k: int) -> Money
-        Money { cents: self.cents div k }
+        Money { cents: self.cents // k }
     end
 end
 
@@ -56,7 +56,7 @@ print(a + b)
 print(a - b)
 print(a * 3)
 print(a / 4)
-print(a div 4)
+print(a // 4)
 print(a mod 4)
 print(b ** 2)
 print(-a)

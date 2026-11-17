@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.0
+
+The cases follow qlang 1.6: the integer division is written `//` and `//=` (it was `div` and `div=`, deprecated in 1.6 and removed in 1.8) and a multi-line comment is `--*` ... `--*` (it was `--(` ... `--)`). No case added or removed; the cases that used the old spellings now use the new ones, so they need qlang 1.6 or later.
+
 ## 1.4.0
 
 New area `read_input` for `read(message)` and `read<T>(message)` (qlang 1.4): the prompt without a new line, `int`, `float`, `bool` and `string` answers, a line that is not a `T` and the end of the input as errors of the `Result` (`ReadError`), `?`, and `T242` for a type that is not readable. The runner gives a case its standard input from `name.in`. 5 cases added, none changed or removed.
