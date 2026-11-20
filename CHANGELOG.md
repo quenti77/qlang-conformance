@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.10.0
 
 New areas for a trait that extends another one: `trait_extends_in_one_impl` (the methods of the extended trait can be given in the `impl` of the trait that extends it, through a chain, and the order of the impls does not matter) and `compile_trait_extends` (`T136` when the extended trait is not implemented, `T137` when its methods are given in both places, `T135` for a method of no trait). 6 cases added, none changed or removed; they need a qlang that has the change of qlang#340.
 
