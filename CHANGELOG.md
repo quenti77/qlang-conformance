@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.0
+
+The cases follow qlang 1.9, which removes `div`, `div=` and the `--(` ... `--)` comment: `div_is_a_name` (a variable, a parameter and a field can be called `div`), `compile_removed_syntax` (`a div b` is `P002`, a closed `--(` ... `--)` block is `L006`) and one case in `comments` (a `--(` that is never closed is a line comment). 4 cases added, none changed or removed; they need qlang 1.9 or later.
+
 ## 1.6.0
 
 The cases follow qlang 1.6: the integer division is written `//` and `//=` (it was `div` and `div=`, deprecated in 1.6 and removed in 1.8) and a multi-line comment is `--*` ... `--*` (it was `--(` ... `--)`). No case added or removed; the cases that used the old spellings now use the new ones, so they need qlang 1.6 or later.
