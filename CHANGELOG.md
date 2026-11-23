@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.11.0
+
+New areas for what qlang 1.11 adds: `result_helpers` (`map`, `map_err`, `and_then`, `unwrap_or`, `ok` on a `Result`), `array_reversed_sorted` (`reversed`, `sorted`, `sorted_by` give a new array and chain with `filter`, `map`, `take`, `drop`), `nullable_unwrap_assert` (`x.unwrap()`, `x.expect("message")`, and `assert(x != none)` narrowing `x`), `runtime_nullable_unwrap` (`R006` for `unwrap` and `expect` on `none`) and `compile_reserved_word_name` (`P001` for a reserved word used as a name). 11 cases added, none changed or removed; they need qlang 1.11 or later.
+
 ## 1.10.0
 
 New areas for a trait that extends another one: `trait_extends_in_one_impl` (the methods of the extended trait can be given in the `impl` of the trait that extends it, through a chain, and the order of the impls does not matter) and `compile_trait_extends` (`T136` when the extended trait is not implemented, `T137` when its methods are given in both places, `T135` for a method of no trait). 6 cases added, none changed or removed; they need a qlang that has the change of qlang#340.
