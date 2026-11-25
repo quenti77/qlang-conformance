@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.12.0
+
+New areas for what qlang 1.12 adds to the language: `raw_strings` (`r"..."` has no escape and no interpolation, so braces and backslashes are plain characters, it may span lines, and a pattern with `{4}` or `\d` needs no doubling), `compile_raw_strings` (`L002` for a raw string that is never closed), `nullable_ok_or` (`x.ok_or(error)` turns a nullable into a `Result`, usable with `?`) and `compile_result_nullable_helpers` (`T002` for a fallback of the wrong type, `T161` for `ok_or` on a value that is not nullable); `result_helpers` gains `unwrap_or_else(f)` (the fallback is computed from the error, and only for an error). 8 cases added, none changed or removed; they need qlang 1.12 or later.
+
 ## 1.11.0
 
 New areas for what qlang 1.11 adds: `result_helpers` (`map`, `map_err`, `and_then`, `unwrap_or`, `ok` on a `Result`), `array_reversed_sorted` (`reversed`, `sorted`, `sorted_by` give a new array and chain with `filter`, `map`, `take`, `drop`), `nullable_unwrap_assert` (`x.unwrap()`, `x.expect("message")`, and `assert(x != none)` narrowing `x`), `runtime_nullable_unwrap` (`R006` for `unwrap` and `expect` on `none`) and `compile_reserved_word_name` (`P001` for a reserved word used as a name). 11 cases added, none changed or removed; they need qlang 1.11 or later.
